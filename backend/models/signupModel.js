@@ -2,43 +2,43 @@ const mongoose = require("mongoose");
 const signupSchema = new mongoose.Schema({
     firstName:{
         type:String,
-        require:true,
+        required:true,
     },
     lastName:{
         type:String,
-        require:true,
+        required:true,
     },
     email:{
         type:String,
-        require:true,
+        required:true,
     },
     password:{
         type:String,
-        require:true,
+        required:true,
     },
     gender:{
         type:String,
-        require:true,
+        required:true,
     },
     hobbies:{
         type:String,
-        require:true,
+        required:true,
     },
     mobile:{
         type:String,
-        require:true,
+        required:true,
     },
     city:{
         type:String,
-        require:true,
+        required:true,
     },
     dob:{
         type:String,
-        require:true,
+        required:true,
     },
     address:{
         type:String,
-        require:true,
+        required:true,
     },
 });
 const SignupData = mongoose.model('SignupData', signupSchema);
