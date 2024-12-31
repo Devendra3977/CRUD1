@@ -38,7 +38,7 @@ const Signup = () => {
             title:"Registerd Successfully!!!!",
             icon:"success"
          });
-         naviagate('/login');
+         navigate('/login');
       }
       catch(error){
          if(error.response){

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import axios from "axios";
-//import {useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import './Login.css';
 
 const Login = () => {
-   //const navigate = useNavigate();
+   const navigate = useNavigate();
    const [formData, setFormData] = useState({
       email:"",
       password:"",
@@ -30,7 +30,7 @@ const Login = () => {
             title:"Login Successfully!!!!",
             icon:"success"
          });
-         //naviagate('/login');  
+         navigate('/dashboard');
       }
       catch(error){
          if(error.response){
